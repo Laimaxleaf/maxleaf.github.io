@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>窗口测试</title>
+		<style type="text/css">
+/*删除浏览器默认样式*/
+*{list-style:none;outline:none;}
+/*全局控制*/
+body{font-family:"微软雅黑";text-align: center;}
+a{
+	text-indent: 1em;
+	display:inline-block;
+	font-size:22px;
+	color:#5E2D00;
+	}
+a:nth-child(1){text-indent:0;}/* 设置第一个链接的首行缩进为0 */
+a:link,a:visited{text-decoration:none;}
+a:hover{
+	text-decoration:underline;
+	color:#f03;
+	}
+dl{display:none;}
+dd{
+	line-height:38px;
+	font-size:22px;
+	font-family:"微软雅黑";
+	color:#333;
+	}
+dd:before{content: url(img/11.png);}/* 添加小图片 */
+dd:nth-child(odd){color:blue}
+dd:nth-child(2) em{
+	color:#f03;
+	font-weight:bold;
+	font-style: normal;
+	}
+dd:nth-child(3) em{
+	color:blue;
+	font-weight:bold;
+	font-style: normal;
+	}
+:target{display:block;}/* 链接到的内容部分显示 */
+</style>
+	</head>
+	<body>
+		<h2>网页设计软件列表(单击查看)</h2>
+<hr size="3" color="#5e2d00" width="750px" />
+<nav>
+  <a href="#news1" class="one">Photoshop软件</a>
+  <a href="#news2" class="two">illustrator软件</a>
+  <a href="#news3" class="two">Dreamweaver软件</a>
+  <a href="#news4" class="two">Fireworks软件</a>
+  </nav>
+<hr size="3" color="#5e2d00" width="750px" />
+<dl id="news1">
+  <dt><img src="img/1.jpg"</dt>
+  <dd>Photoshop一款<em>超S设计神器</em>！给画面来点动感吧。</dd>
+  <dd>xxx<em>xxxxxxx</em>xxxxxx</dd>
+  <dd>xxxxxx</dd>
+  </dl>
+<dl id="news2">
+  <dt><img src="img/2.jpg" /></dt>
+  <dd>Illustrator是xxxxxxxxxx</dd>
+  <dd>xxxxxxxxxxxxxxxxxxxxxxxxxxx</dd>
+  <dd>xxxxxxxxxxxxxxxxxxxxxxxx</dd>
+  <dd>xxxxxxxxxxxxxxxxxxxxxxxx</dd>
+  <dd>xxxxxxxxxxxxxxxxxxxxxxxx</dd>
+  </dl>
+<dl id="news3">
+   <dt><img src="img/3.jpg"  /></dt>
+   <dd>xxxxxxxxxxxxxx</dd>
+   <dd>xxxxxxxxxxxxxxxxx</dd>
+   <dd>xxxxxxxxxxxxx</dd>
+</dl>
+<dl id="news4">
+   <dt><img src="img/4.jpg" />
+   <dd>xxxxxxxxxxxxxxxxxx</dd>
+   <dd>xxxxxxxxxxxxxxxx</dd>
+   <dd>xxxxxxxxxxxxxxx</dd>
+	</body>
+</html>
