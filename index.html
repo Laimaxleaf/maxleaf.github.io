@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>111</title>
+		<style type="text/css">
+			*{list-style:none;outline:none;}
+/*全局控制*/
+body{font-family:"微软雅黑";text-align: center;}
+			p:nth-child(odd){
+				color: red;
+				font-size: 30px;
+			}
+			dl{display:none;}
+			p{display:none;}
+			dd:nth-of-type(odd){
+				color: darkorange;
+			}
+			:target{display: block;}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<a href="#one">点击进入页面1</a>
+			<a href="#two">点击进入页面2</a>
+			<a href="#three">点击进入页面3</a>
+		</nav>
+		<dl  id="one">
+			<dt><img src="img/1.jpg"/></dt>
+			<dd>这是第一个界面</dd>
+		</dl>
+		<dl	id="two">
+			<dt><img src="img/2.jpg"/></dt>
+			<dd>这是第二个界面</dd>
+		</dl>
+		<p id="three">
+			<img src="img/1.jpg" />
+			这是第三个界面
+		</p>
+	</body>
+	
+</html>
